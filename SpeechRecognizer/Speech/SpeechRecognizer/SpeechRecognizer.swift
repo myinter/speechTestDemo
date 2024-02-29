@@ -167,7 +167,7 @@ extension SpeechRecognizer {
         guard workingStatus == .running else { return }
         stopRecognizing()
         workingStatus = .pause
-        self.delegate?.onRecoverFromInterruption(recognizer: self)
+        self.delegate?.onPause(recognizer: self)
     }
 
     public func fireRecognizationTask() {
