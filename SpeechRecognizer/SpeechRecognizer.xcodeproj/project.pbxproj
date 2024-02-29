@@ -12,7 +12,7 @@
 		405D46442B90306100F898DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A005F72B8C5013006171F6 /* MainViewController.swift */; };
 		405D46452B90306100F898DA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A005F42B8C388D006171F6 /* SpeechRecognizer.swift */; };
 		405D46462B90306100F898DA /* SpeechRecognizerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A005FE2B8E12C0006171F6 /* SpeechRecognizerConstants.swift */; };
-		405D46472B90306A00F898DA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AAD0B72B68C51A00CDE12E /* SpeechRecognizer.swift */; };
+		405D46482B908D8400F898DA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AAD0B72B68C51A00CDE12E /* SpeechRecognizer.swift */; };
 		40A005FA2B8C5013006171F6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A005F82B8C5013006171F6 /* MainViewController.xib */; };
 		40AAD0762B68058C00CDE12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AAD0752B68058C00CDE12E /* Assets.xcassets */; };
 		40AAD0C02B68C5D600CDE12E /* TestDataString.txt in Resources */ = {isa = PBXBuildFile; fileRef = 40AAD0BF2B68C5D600CDE12E /* TestDataString.txt */; };
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				40AAD06B2B68058400CDE12E /* Speech */,
-				40AAD0B62B68C51A00CDE12E /* eBayTestTests */,
+				40AAD0B62B68C51A00CDE12E /* SpeechRecognizerTests */,
 				40AAD06A2B68058400CDE12E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,12 +119,12 @@
 			path = Speech;
 			sourceTree = "<group>";
 		};
-		40AAD0B62B68C51A00CDE12E /* eBayTestTests */ = {
+		40AAD0B62B68C51A00CDE12E /* SpeechRecognizerTests */ = {
 			isa = PBXGroup;
 			children = (
 				40AAD0B72B68C51A00CDE12E /* SpeechRecognizer.swift */,
 			);
-			path = eBayTestTests;
+			path = SpeechRecognizerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				405D46472B90306A00F898DA /* SpeechRecognizer.swift in Sources */,
+				405D46482B908D8400F898DA /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
