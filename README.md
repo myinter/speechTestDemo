@@ -1,6 +1,8 @@
 # speechTestDemo
 A demo of a speech recognizer that can continue voice recognition after switching to the background will callin handling
 
+Open the project file with XCode and run it directly without any third-party dependencies.
+
 # iOS Speech Recognizer
 
 ## Features:
