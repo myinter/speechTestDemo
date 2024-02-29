@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="SpeechRecognizer" customModuleProvider="target">
+            <connections>
+                <outlet property="clearButton" destination="pes-Oi-fNo" id="GFu-Iv-jRm"/>
+                <outlet property="startResumeButton" destination="Xd8-oG-Bli" id="Txh-S4-8lz"/>
+                <outlet property="textView" destination="PTI-fx-2N3" id="ZLI-SD-CKc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd8-oG-Bli">
+                    <rect key="frame" x="34.333333333333343" y="730" width="128" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="edj-Q8-7Oo"/>
+                        <constraint firstAttribute="width" constant="128" id="hjK-3o-Nf3"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="开始语音识别"/>
+                    <connections>
+                        <action selector="startStopButtonClicked:" destination="-1" eventType="touchUpInside" id="8K2-bu-O6S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pes-Oi-fNo">
+                    <rect key="frame" x="230.66666666666663" y="730" width="128" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="J3l-bW-txd"/>
+                        <constraint firstAttribute="width" constant="128" id="kP2-55-yZ5"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="清除历史内容"/>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-fx-2N3">
+                    <rect key="frame" x="5" y="59" width="383" height="627"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pes-Oi-fNo" firstAttribute="centerY" secondItem="Xd8-oG-Bli" secondAttribute="centerY" id="50Y-PE-9AW"/>
+                <constraint firstItem="pes-Oi-fNo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.5" id="LhK-G1-nn1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PTI-fx-2N3" secondAttribute="trailing" constant="5" id="MRq-6A-QWm"/>
+                <constraint firstItem="Xd8-oG-Bli" firstAttribute="top" secondItem="PTI-fx-2N3" secondAttribute="bottom" constant="44" id="PIK-LN-dLt"/>
+                <constraint firstItem="Xd8-oG-Bli" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.5" id="VC2-Wl-Wls"/>
+                <constraint firstItem="PTI-fx-2N3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="YP8-Pg-fOB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Xd8-oG-Bli" secondAttribute="bottom" constant="44" id="ma1-9L-y7p"/>
+                <constraint firstItem="PTI-fx-2N3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="oHG-ny-QvV"/>
+            </constraints>
+            <point key="canvasLocation" x="64.885496183206101" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
