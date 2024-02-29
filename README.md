@@ -13,3 +13,9 @@ Open the project file with XCode and run it directly without any third-party dep
 
 3. **Automated Call Handling:** Streamlining incoming calls, the recognizer can automatically pause and resume both recording and speech recognition processes, ensuring a seamless user experience.
 
+Video presentation:
+
+https://github.com/myinter/speechTestDemo/assets/4507514/edda0cd7-6e6e-4eab-a266-f652b7e351bd
+
+https://github.com/myinter/speechTestDemo/assets/4507514/b28ee898-3ec2-40b2-9685-f2cfa5616e99
+
